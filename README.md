@@ -16,6 +16,7 @@ We also provide trained models for each of the following datasets: <br />
 
 ```
 pip install torch==1.3.1
+pip install numpy
 pip install -r requirements.txt
 ```
 
