@@ -30,7 +30,7 @@ pip install -e .
 - install current package
 
 ```
-hoppity_clean$ pip install -e .
+hoppity$ pip install -e .
 ```
 
 - JS packages
