@@ -50,7 +50,7 @@ This builds the AST in our graph format, for each file and saves it in a pkl fil
 
 # Data Split - Train, Validate, and Test
 
-If you're using the cooked dataset we provided, this portion is already done for you and you can move onto the next step. 
+If you're using the cooked dataset we provided, this portion is already done for you. Once you've downloaded the compressed file, unzip by running `tar xzf cooked-one-diff.gz`. If you do not specify an output directory, the files will be placed in `~/cooked-full-fmt-shift_node/` by default. This will take around an hour. After the files are extracted you can move onto the next step to begin training.
 
 Otherwise, run `data_process/run_split.sh` to partition your cooked dataset. The raw Javascript source files are needed for this script to filter out duplicates. Set the `raw_src` variable in the script accordingly. 
 
