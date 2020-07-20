@@ -19,4 +19,3 @@ gtrans/eval/run*.sh
 gtrans/data_process/run*.sh
 gtrans/eval/*eval.sh
 gtrans/training/*train.sh
-gtrans/training/*run_main.sh

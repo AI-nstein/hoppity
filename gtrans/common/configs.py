@@ -58,8 +58,8 @@ cmd_opt.add_argument('-grad_clip', default=5, type=float, help='clip gradient')
 cmd_opt.add_argument('-dropout', default=0, type=float, help='dropout')
 
 cmd_opt.add_argument('-num_epochs', default=10000, type=int, help='number of training epochs')
-cmd_opt.add_argument('-iters_per_val', default=1000, type=int, help='number of iterations per evaluation')
-cmd_opt.add_argument('-batch_size', default=64, type=int, help='batch size for training')
+cmd_opt.add_argument('-iters_per_val', default=100, type=int, help='number of iterations per evaluation')
+cmd_opt.add_argument('-batch_size', default=10, type=int, help='batch size for training')
 
 cmd_opt.add_argument('-train_pct', default=0.8, type=float, help='fraction of training samples')
 cmd_opt.add_argument('-val_pct', default=0.1, type=float, help='fraction of validation samples')
