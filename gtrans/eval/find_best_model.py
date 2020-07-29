@@ -2,6 +2,7 @@ import numpy as np
 import torch
 import re
 import os
+import sys
 import glob
 from tqdm import tqdm
 from gtrans.common.dataset import Dataset
@@ -54,10 +55,16 @@ for _dir in tqdm(glob.glob(os.path.join(cmd_args.save_dir, "*.ckpt"))):
     model.eval()
 
     tot_samples = 0
+    tot_ll = None
+    
     for sample_list in tqdm(val_gen):
         ll, new_asts = model(sample_list, phase='val', pred_gt=True)
         tot_ll = torch.sum(ll).item()
         tot_samples += len(sample_list)
+
+    if not tot_ll: 
+        print("No validation samples - run split script")
+        sys.exit(1)
 
     test_loss = -tot_ll / tot_samples
     loss_dict[int(epoch_num)] = float(test_loss) 
