@@ -15,6 +15,7 @@ np_float = np.float32
 str_float = "float32"
 
 SEPARATOR = '!#@$'
+MAX_VOCAB_SIZE = 5000
 
 opts = argparse.ArgumentParser(description='gpu option', allow_abbrev=False)
 opts.add_argument('-gpu', type=int, default=-1, help='-1: cpu; 0 - ?: specific gpu index')

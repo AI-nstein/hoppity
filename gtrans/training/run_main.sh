@@ -11,5 +11,5 @@ python main_gtrans.py \
 	-max_lv 4 \
 	-max_modify_steps 1 \
 	-resampling True \
-	-comp_methd "mlp" \
+	-comp_method "mlp" \
 	$@
